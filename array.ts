@@ -1,4 +1,4 @@
-/*let students:any[] = ['Sara', 'Saba', 'Sana', 'Sila', 'Sasha', 1, 3, 5, true];
+let students:any[] = ['Sara', 'Saba', 'Sana', 'Sila', 'Sasha', 1, 3, 5, true];
 
 console.log (students);
 
@@ -8,7 +8,7 @@ console.log(students[2]);
 let student1 = students[0];
 
 console.log (student1);
-console.log (students[7]);*/
+console.log (students[7]);
 
 let array:number[]= [1, 2, 3, 4, 5, 6, 7];
 let arr1:boolean[]= [true , false];
