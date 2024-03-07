@@ -1,4 +1,3 @@
-"use strict";
 //example 1 string
 let game = "FootBall";
 console.log(game);
@@ -14,3 +13,4 @@ console.log(value);
 //example 5 undefined
 let apples;
 console.log(apples);
+export {};

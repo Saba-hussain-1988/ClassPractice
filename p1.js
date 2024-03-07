@@ -1,5 +1,5 @@
 //re assigning a variable
-var personName = "Ahmed";
+let personName = "Ahmed";
 console.log(personName);
 // reassign in same type
 personName = "Mehak";
@@ -7,7 +7,7 @@ personName = "Mehak";
 console.log(personName);
 // re-assign practce with number type
 // save a number in a variable
-var num = 45;
+let num = 45;
 //print
 console.log(num);
 // reassign the variable
@@ -16,8 +16,8 @@ num = 23;
 console.log(num);
 //practice error
 //if we change the value of a variable(one type to another type)
-var num1 = 12;
-var PersonName = "Bilal";
+let num1 = 12;
+let PersonName = "Bilal";
 //print these variables
 console.log(num1 + '\n' + PersonName);
 num1 = "Hello";
@@ -28,9 +28,10 @@ console.log(num1 + '\n' + PersonName);
 //print a message to a person
 console.log("Good Day, " + personName + "! I wish all the best.");
 //print message with ""
-var singer1 = 'Saad';
-var message = '${singer1} is an unknown singer.';
+let singer1 = 'Saad';
+let message = singer1 + ' is an unknown singer.';
 console.log(message);
 //concatenate string with number
-var personAge = 35;
+let personAge = 35;
 console.log("Person age is: " + (personAge + 5));
+export {};
