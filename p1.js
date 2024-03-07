@@ -1,3 +1,4 @@
+"use strict";
 //re assigning a variable
 let personName = "Ahmed";
 console.log(personName);
@@ -34,4 +35,3 @@ console.log(message);
 //concatenate string with number
 let personAge = 35;
 console.log("Person age is: " + (personAge + 5));
-export {};
