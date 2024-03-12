@@ -14,11 +14,11 @@ let information ={
        isCountinue: true,
     },
     contact: {
-        phoneNumer: '03132502474',
+        phoneNumer: '0000-0000000',
         email: 'example45@.gmail.com',
     },
 };
 
 
-console.log(information.education.majorSubjects[0]);
-console.log(information.name);
+console.log(information.education.majorSubjects[0]);// Mathematics
+console.log(information.name); // print full nested object of name
