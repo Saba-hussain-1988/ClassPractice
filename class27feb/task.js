@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 //print hello world
 console.log("Hello World");
 console.log("I'm S.R.Chohan.");
@@ -32,4 +34,18 @@ let color = null;
 console.log(color); //any type
 let colo = null;
 console.log(colo); //strong type
-export {};
+// bigint
+let bigNumber = 234500n;
+console.log(bigNumber);
+//bigint supports arithematics oprations
+let bignum2 = 9823576n;
+let result = bigNumber + bignum2;
+console.log(result);
+//Symbol
+// used to creat unique identifiers or values
+let sym1 = Symbol("you");
+let sym2 = Symbol("me");
+let sym3 = Symbol("you");
+console.log(sym1 === sym2); // false
+console.log(sym1 === sym3); // false
+//sym1 and sym3 having the same description ("you"), they are still different symbols.

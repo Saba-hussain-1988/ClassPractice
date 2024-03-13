@@ -1,0 +1,29 @@
+       VARIABLE
+Q:   What is variable?
+    Variable is act like a container which stores information called 'Data'.
+
+    KINDS OF VARIABLE
+Q:  How many kinds of varible?
+    varibles can categorized into saveral types based on how they are declared and used,
+
+  1)  PREMETIVE DATA TYPES 
+a. String: Represents textual Data.
+b. Number: Represents numeric value, include 'Integers' and floating-points numbers.
+c. Boolean: Represents logical values, 'true' or 'false'.
+d. Null: Represents an intentional absence of any object value.
+e. Undefined: represents a variable that has been declared but not assigned any value.
+f. Bigint: 
+g. Symbol: Represents unique and immutable values often used as property keys. 
+
+
+  2)   OBJECT DATA TYPES
+
+a. Object: Represents any JavaScript object, including arrays, functions, and plain objects.
+B. Array: Represents a list of elements of the same type.
+C. Function: Represents a JavaScript function.
+
+   3)   ANY DATA TYPES
+
+a. Any: Represents a variable that can hold any type of value. Use of 'any' should be minimized as 
+it bypasses TypeScript's type checking.
+

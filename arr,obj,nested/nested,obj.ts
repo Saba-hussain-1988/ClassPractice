@@ -18,7 +18,12 @@ let information ={
         email: 'example45@.gmail.com',
     },
 };
+  
 
+// Loop through the majorSubjects array and print each subject
+for (let i = 0; i < information.education.majorSubjects.length; i++) {
+    console.log(information.education.majorSubjects[i]);
+}
 
 console.log(information.education.majorSubjects[0]);// Mathematics
 console.log(information.name); // print full nested object of name
