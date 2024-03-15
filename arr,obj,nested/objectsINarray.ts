@@ -57,7 +57,8 @@ let item4:{cloth:string, designNUmber:string, color:string[],
 
     for (let i = 0; i <babaSuits.length; i++) {
         if (babaSuits[i].isAvailable === false) {
+           
+            console.log(babaSuits[i].designNUmber, "is sale out. Available again after a week.");
             babaSuits.splice(i, 1);
-            console.log(babaSuits[i].designNUmber, "is sale out. Available again after a week.")
         }
     }
