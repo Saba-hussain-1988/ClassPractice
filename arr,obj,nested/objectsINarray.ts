@@ -50,7 +50,12 @@ let item4:{cloth:string, designNUmber:string, color:string[],
         }, bundleOf:6,
     }; 
 
-    let babaSuits=[item1, item2, item3, item4];
+    let babaSuits :{cloth:string, designNUmber:string, color:string[],
+    isAvailable:boolean, isInSale:boolean, size: string[],
+    price:{
+        salePrice?:number, fullPrice:number
+    }, bundleOf:number,
+}[]=[item1, item2, item3, item4];
 
 
     // lets check and remove
