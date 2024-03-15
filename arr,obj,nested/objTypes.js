@@ -1,4 +1,4 @@
-var book = {
+let book = {
     name: 'The Prince',
     publishedYear: new Date(1532),
     auther: {
@@ -8,3 +8,4 @@ var book = {
     isFamous: true,
 };
 console.log(book.name, 'by', book.auther.name);
+export {};
