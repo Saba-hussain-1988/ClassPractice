@@ -1,34 +1,35 @@
 // if I wanna use objects in array thn how can I describe the type of array?
 // which one item is saled out, try to remove from the array
-var item1 = { cloth: "80% cotton", designNUmber: "EZ305", color: ["blue", "black", "seagreen"],
+let item1 = { cloth: "80% cotton", designNUmber: "EZ305", color: ["blue", "black", "seagreen"],
     isAvailable: true, isInSale: false, size: ["small", "medium", "large"],
     price: {
         fullPrice: 4050
     }, bundleOf: 12,
 };
-var item2 = { cloth: "100% cotton", designNUmber: "ZP211", color: ["medium brown", "golden black", "rust pink"],
+let item2 = { cloth: "100% cotton", designNUmber: "ZP211", color: ["medium brown", "golden black", "rust pink"],
     isAvailable: true, isInSale: true, size: ["large", "extra Large"],
     price: {
         salePrice: 2590, fullPrice: 3500
     }, bundleOf: 6,
 };
-var item3 = { cloth: "100% cotton", designNUmber: "SK1902", color: ["light green", "light blue", "ash white", "apple white"],
+let item3 = { cloth: "100% cotton", designNUmber: "SK1902", color: ["light green", "light blue", "ash white", "apple white"],
     isAvailable: true, isInSale: false, size: ["small", "medium", "large"],
     price: {
         fullPrice: 3099
     }, bundleOf: 2,
 };
-var item4 = { cloth: "Polyster", designNUmber: "ZK808", color: ["peach & Black", "gray & Black"],
+let item4 = { cloth: "Polyster", designNUmber: "ZK808", color: ["peach & Black", "gray & Black"],
     isAvailable: false, isInSale: false, size: ["small", "medium", "large"],
     price: {
         fullPrice: 5000,
     }, bundleOf: 6,
 };
-var babaSuits = [item1, item2, item3, item4];
+let babaSuits = [item1, item2, item3, item4];
 // lets check and remove
-for (var i = 0; i < babaSuits.length; i++) {
+for (let i = 0; i < babaSuits.length; i++) {
     if (babaSuits[i].isAvailable === false) {
         console.log(babaSuits[i].designNUmber, "is sale out. Available again after a week.");
         babaSuits.splice(i, 1);
     }
 }
+export {};
