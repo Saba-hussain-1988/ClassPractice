@@ -17,10 +17,20 @@ else if (calcu.oprator === "*") {
     console.log(chalk.cyanBright(calcu.num1, calcu.oprator, calcu.num2, '=', calcu.num1 * calcu.num2));
 }
 else if (calcu.oprator === "/") {
-    console.log(chalk.blue(calcu.num1, calcu.oprator, calcu.num2, '=', calcu.num1 / calcu.num2));
+    if (calcu.num2 === 0) {
+        console.log('Could not divided by zero, plz enter a non zero second number.');
+    }
+    else {
+        console.log(chalk.blue(calcu.num1, calcu.oprator, calcu.num2, '=', calcu.num1 / calcu.num2));
+    }
 }
 else if (calcu.oprator === "%") {
-    console.log(chalk.yellowBright(calcu.num1, calcu.oprator, calcu.num2, '=', calcu.num1 % calcu.num2));
+    if (calcu.num2 === 0) {
+        console.log('Could not divided by zero, plz enter a non zero second number.');
+    }
+    else {
+        console.log(chalk.yellowBright(calcu.num1, calcu.oprator, calcu.num2, '=', calcu.num1 % calcu.num2));
+    }
 }
 else if (calcu.oprator === "**") {
     console.log(chalk.green(calcu.num1, calcu.oprator, calcu.num2, '=', calcu.num1 ** calcu.num2));
