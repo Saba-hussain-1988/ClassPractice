@@ -4,16 +4,20 @@ import chalk from "chalk";
 
 //take input from user
 let calcu = await inquirer.prompt([
-    {name : "num1", type: "number", message: "enter the first number:",
+    {name : "num1", type: "input", message: "enter the first number:",
 validate: function(num1) {
-    let isValid = !isNaN(num1);
+    let intNum = parseInt(num1);
+    let floatNum = parseFloat(num1);
+    let isValid = !isNaN(intNum) && !isNaN(floatNum);
     return isValid || 'please enter a valid number.';
 }},
     {name : "oprator", type: "list", message: "select an oprator:", 
     choices: ['+', '-', '*', '/', '%', '**']},
-    {name : "num2", type: "number", message: "enter the second number:",
+    {name : "num2", type: "input", message: "enter the second number:",
 validate: function(num2) {
-    let isValid = !isNaN(num2);
+    let intNum = parseInt(num2);
+    let floatNum = parseFloat(num2);
+    let isValid = !isNaN(intNum) && !isNaN(floatNum);
     return isValid || 'please enter a valid number.';
 }}
 ]);
